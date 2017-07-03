@@ -9,9 +9,7 @@ class Authenticator
 {
     const ENDPOINT = 'https://api.trustpilot.com/v1/oauth/oauth-business-users-for-applications/accesstoken';
 
-    /**
-     * @var GuzzleClientInterface
-     */
+    /** @var GuzzleClientInterface */
     private $guzzle;
 
     /**
@@ -32,14 +30,18 @@ class Authenticator
      */
     public function getAccessToken($apiKey, $apiSecret, $username, $password)
     {
-        $response = $this->guzzle->request('POST', self::ENDPOINT, [
-            'auth' => [$apiKey, $apiSecret],
-            'form_params' => [
-                'grant_type' => 'password',
-                'username' => $username,
-                'password' => $password,
-            ],
-        ]);
+        $response = $this->guzzle->request(
+            'POST',
+            self::ENDPOINT,
+            [
+                'auth' => [$apiKey, $apiSecret],
+                'form_params' => [
+                    'grant_type' => 'password',
+                    'username' => $username,
+                    'password' => $password,
+                ],
+            ]
+        );
 
         $data = json_decode((string) $response->getBody(), true);
 

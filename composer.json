@@ -8,6 +8,11 @@
     "license": "MIT",
     "authors": [
         {
+          "name": "Michael Frank",
+          "email": "contact@phpdoctor.cc",
+          "homepage": "https://www.the-Spirit-of-IT.com/"
+        },
+        {
             "name": "Andrew Carter",
             "email": "andrew.carter@moneymaxim.co.uk"
         }
