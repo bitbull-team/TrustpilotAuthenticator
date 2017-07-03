@@ -1,5 +1,5 @@
 {
-    "name": "moneymaxim/trustpilot-authenticator",
+    "name": "itspirit/trustpilot-authenticator",
     "description": "A PHP library for obtaining Trustpilot API access tokens",
     "require": {
         "php": ">=5.5.0",
