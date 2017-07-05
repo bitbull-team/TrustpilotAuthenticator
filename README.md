@@ -17,9 +17,9 @@ composer install itspirit/trustpilot-authenticator
 ## Usage
 
 ```php
-$authenticator = new Trustpilot\Api\Authenticator\Authenticator();
+$authenticator = new Trustpilot\Api\Authenticator\Authenticator($apiKey, $apiToken, $username, $password);
 
-$accessToken = $authenticator->getAccessToken($apiKey, $apiToken, $username, $password);
+$accessToken = $authenticator->getAccessToken();
 
 // $accessToken->getToken(): string
 // $accessToken->hasExpired(): bool

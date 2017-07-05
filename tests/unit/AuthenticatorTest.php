@@ -19,9 +19,6 @@ class AuthenticatorTest extends \Codeception\Test\Unit
     const USERNAME = 'username';
     const PASSWORD = 'password';
 
-    /** @var \UnitTester */
-    protected $tester;
-
     /** @var GuzzleClientInterface|PHPUnit_Framework_MockObject_MockObject */
     private $guzzleMock;
 
