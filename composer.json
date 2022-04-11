@@ -3,7 +3,7 @@
     "description": "A PHP library for obtaining Trustpilot API access tokens",
     "require": {
         "php": ">=5.5.0",
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~7"
     },
     "require-dev": {
         "codeception/codeception": "^2.2"
