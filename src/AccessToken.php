@@ -67,4 +67,14 @@ class AccessToken implements \Serializable
     {
         return $this->expiry;
     }   
+
+    public function __serialize(): array
+    {
+        return $this->serialize();
+    }
+
+    public function __unserialize(array $data): void
+    {
+        $this->unserialize($data);
+    }
 }
